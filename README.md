@@ -15,31 +15,36 @@ Special thanks to:
 - **The Django and React communities** for their excellent documentation and support  
 - **[Material-UI](https://mui.com/)** for the comprehensive component library that accelerated frontend development  
 - **[Vite](https://vitejs.dev/)** for the fast and modern frontend build tooling  
-## 📡 API Reference  
 
-#### Get all questions  
 
-**Request:**  
+
+## API Reference
+
+#### Get all items
+
 ```http
-GET /api/questions
+  GET /api/items
+```
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `api_key` | `string` | **Required**. Your API key |
 
+#### Get item
 
-GET /api/questions/{id}
-| Parameter | Type     | Description                           |
-| :-------- | :------- | :------------------------------------ |
-| `id`      | `string` | **Required**. ID of question to fetch |
+```http
+  GET /api/items/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+#### add(num1, num2)
+
+Takes two numbers and returns the sum.
 
 
-POST /api/evaluate
-
-| Body Parameter | Type     | Description                          |
-| :------------- | :------- | :----------------------------------- |
-| `question_id`  | `string` | **Required**. The question ID        |
-| `answer`       | `string` | **Required**. User’s answer response |
 
 
 ## 📎 Appendix  
