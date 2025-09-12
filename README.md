@@ -44,7 +44,6 @@ Additional information and notes:
 ### Frontend (React + Vite)  
 To build and deploy the frontend:  
 
-```bash
 # Build production files
 cd frontend
 npm run build
@@ -66,8 +65,7 @@ python manage.py collectstatic
 gunicorn backend.wsgi
 
 
-
-✨ Features  
+## Features  
 - **AI Question Generator**: Generates role-specific technical interview questions using the backend (powered by OpenAI GPT API or fallback logic).  
 - **Real-time Answer Evaluation**: Evaluates user answers and provides instant feedback.  
 - **Role Selection**: Allows users to practice for a selected job role (if a job role selector is available).  
